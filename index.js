@@ -116,4 +116,20 @@ do {
 } while (res > 50);
 alert(`${res}, ${ i}`);
 
+/**
+ * Вывести все числа от 1 до 100, которые кратные указанному
+ * пользователем числу.
+ */
 
+const userNumber3 = Number(prompt('Please input number'));
+
+if (isNaN(userNumber3)) {
+    alert('incorrect value')
+}
+let arrRes = [];
+for (let i = 1; i < 101; i++) {
+    if (i % userNumber3 === 0) {
+        arrRes.push(i);
+    }
+}
+alert(arrRes);
